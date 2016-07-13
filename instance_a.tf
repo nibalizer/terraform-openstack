@@ -7,7 +7,7 @@ provider "openstack" {
 }
 
 resource "openstack_compute_instance_v2" "basic" {
-  name = "basic"
+  name = "openstack-advanced-topics"
   image_id = "e45c00df-b189-414c-b82c-0917cd8a464d"
   flavor_id = "small"
   key_pair = "${var.key_pair_name}"
@@ -18,4 +18,5 @@ resource "openstack_compute_instance_v2" "basic" {
   }
 
 }
+
 
