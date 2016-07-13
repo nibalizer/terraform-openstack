@@ -1,0 +1,13 @@
+
+#  provisioner "remote-exec" {
+#      connection {
+#          user = "ubuntu"
+#          host = "${openstack_compute_instance_v2.basic.access_ip_v6}"
+#          bastion_host = "bastion_host"
+#      }
+#      inline = [
+#      "who am i",
+#      "curl http://spencerkrum.com/install_puppet.sh | sudo bash",
+#      "uptime"
+#      ]
+#  }
