@@ -1,0 +1,20 @@
+## Add volume management
+
+Add to machine block:
+
+```json
+  volume {
+    volume_id = "${openstack_blockstorage_volume_v1.myvol.id}"
+  }
+}
+```
+
+Add to configuration
+
+```
+resource "openstack_blockstorage_volume_v1" "myvol" {
+  name = "myvol"
+  size = 5
+}
+```
+
