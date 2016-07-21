@@ -1,0 +1,6 @@
+user_name = "username"
+tenant_name = "username"
+auth_url = "somekeystone.somewhere:5000/v3"
+password = "securepassword"
+key_pair_name = "ssh_key_name"
+domain_name = "Default"
