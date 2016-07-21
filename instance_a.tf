@@ -13,7 +13,7 @@ resource "openstack_compute_instance_v2" "terraform-server" {
   image_id = "ec415914-6caa-428e-b72f-77a655342ffc"
   flavor_id = "f4c1349e-59bf-47af-8960-be65c781d792"
   key_pair = "${var.key_pair_name}"
-  security_groups = ["nibz"]
+  security_groups = ["default"]
 
   network {
     name = "provider"
