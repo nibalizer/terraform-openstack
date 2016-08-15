@@ -4,3 +4,6 @@ variable "password" {}
 variable "auth_url" {}
 variable "key_pair_name" {}
 variable "domain_name" {}
+variable "image_id" {}
+variable "flavor_id" {}
+variable "security_groups" {}
