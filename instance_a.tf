@@ -8,7 +8,7 @@ provider "openstack" {
 }
 
 resource "openstack_compute_instance_v2" "terraform-server" {
-  count           = 8
+  count           = "${var.instance_count}"
   name            = "terraform-server-${count.index + 1}"
   image_id        = "${var.image_id}"
   flavor_id       = "${var.flavor_id}"
