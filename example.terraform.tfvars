@@ -7,3 +7,4 @@ domain_name     = "Default"
 image_id        = "imageUUID"
 flavor_id       = "flavorid"
 security_groups = "default"
+instance_count  = 8

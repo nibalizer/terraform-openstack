@@ -7,3 +7,4 @@ variable "domain_name" {}
 variable "image_id" {}
 variable "flavor_id" {}
 variable "security_groups" {}
+variable "instance_count" {}
